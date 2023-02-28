@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="assets/css/style.css">
+		<title>Document</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+
+	</head>
+	<body>
+        <div id="form" class="w-11/12 md:w-1/4 right-0 left-0 mx-auto mt-14">
+            <h1 class="text-center text-xl"> Call Student</h1>
+            <input id="cardId" type="text" class="p-1.5 rounded-md border-2 border-gray-800 right-0 left-0 mx-auto block mt-5 w-full" placeholder="Card ID">
+            <button id="send" class="text-white bg-gray-800 p-1.5 rounded-md w-full mt-2"> Call </button>
+        </div>
+
+        <div id="status" class="w-11/12 md:w-1/4 right-0 left-0 mx-auto mt-14 hidden">
+            <h2 class="text-lg text-center"> Your Request Status </h2>
+            <ul id="statusList">
+            </ul>
+        </div>
+
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<script src="./assets/js/app.js"></script>
+	</body>
+</html>
